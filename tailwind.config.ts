@@ -90,8 +90,13 @@ export default {
 					}
 				},
 				'float': {
-					'0%, 100%': { transform: 'translateY(0px)' },
-					'50%': { transform: 'translateY(-10px)' }
+					'0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+					'50%': { transform: 'translateY(-20px) rotate(5deg)' }
+				},
+				'radar': {
+					'0%': { transform: 'rotate(0deg)', opacity: '1' },
+					'50%': { opacity: '0.6' },
+					'100%': { transform: 'rotate(360deg)', opacity: '1' }
 				},
 				'confetti': {
 					'0%': { transform: 'scale(0) rotate(0deg)', opacity: '0' },
@@ -103,8 +108,9 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.3s ease-out',
-				'float': 'float 3s ease-in-out infinite',
-				'confetti': 'confetti 0.5s ease-out'
+				'float': 'float 6s ease-in-out infinite',
+				'radar': 'radar 4s linear infinite',
+				'confetti': 'confetti 0.8s ease-out'
 			}
 		}
 	},
